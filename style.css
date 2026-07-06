@@ -1,1 +1,115 @@
+body{
+margin:0;
+padding:10px;
+font-family:Arial;
+background:#f5f5f5;
+}
 
+.topo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:22px;
+font-weight:bold;
+padding:15px;
+}
+
+.btn-menu{
+font-size:22px;
+border:none;
+background:none;
+cursor:pointer;
+}
+
+/* MENU */
+.menu{
+position:fixed;
+top:0;
+left:-220px;
+width:200px;
+height:100%;
+background:#222;
+padding:10px;
+display:flex;
+flex-direction:column;
+gap:10px;
+transition:0.3s;
+z-index:1000;
+}
+
+.menu button{
+padding:10px;
+border:none;
+border-radius:5px;
+background:white;
+cursor:pointer;
+}
+
+.menu.ativo{
+left:0;
+}
+
+/* BUSCA */
+.busca{
+margin:10px 0;
+}
+
+.busca input{
+width:100%;
+padding:12px;
+border-radius:30px;
+border:1px solid #ccc;
+}
+
+/* VITRINE */
+#vitrine{
+column-count:2;
+column-gap:10px;
+}
+
+.card{
+background:white;
+margin-bottom:10px;
+border-radius:15px;
+overflow:hidden;
+break-inside:avoid;
+box-shadow:0 2px 5px rgba(0,0,0,.1);
+}
+
+.card img{
+width:100%;
+}
+
+.info{
+padding:10px;
+}
+
+.preco{
+color:green;
+font-weight:bold;
+}
+
+/* MODAL */
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+justify-content:center;
+align-items:center;
+z-index:2000;
+}
+
+.modal-conteudo{
+background:white;
+padding:20px;
+border-radius:10px;
+width:300px;
+}
+
+.modal.ativo{
+display:flex;
+}
